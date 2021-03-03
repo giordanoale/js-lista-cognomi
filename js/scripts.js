@@ -4,9 +4,12 @@ var cognomi = ["bianchi", "rossi", "duzioni", "balsano", "verdi", "gastani frinz
 
 var utente = prompt("Inserisci il tuo cognome");
 
+var user = utente.toLowerCase();
+
 // Inserirlo in un array con altri cognomi
 
-cognomi.push(utente);
+console.log(user);
+cognomi.push(user);
 
 // Stampa la lista ordinata alfabeticamente
 
@@ -17,9 +20,9 @@ console.log(cognomi);
 
 for (var i = 0; i < cognomi.length; i++) {
 
-  if (utente == cognomi[i]) {
+  if (user == cognomi[i]) {
     var posizione = i + 1;
-    console.log("La posizione di " + utente + " all'interno dell'Array è la numero " + posizione);
+    document.getElementById("risultato").innerHTML = "La posizione di " + utente + " all'interno dell'Array è la numero " + posizione;
   }
 
 }

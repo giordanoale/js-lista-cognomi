@@ -18,10 +18,12 @@ console.log(cognomi);
 
 // Scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 
+var posizione;
+
 for (var i = 0; i < cognomi.length; i++) {
 
   if (user == cognomi[i]) {
-    var posizione = i + 1;
+    posizione = i + 1;
     document.getElementById("risultato").innerHTML = "La posizione di " + utente + " all'interno dell'Array è la numero " + posizione;
   }
 
